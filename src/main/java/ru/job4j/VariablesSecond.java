@@ -10,9 +10,9 @@ public class VariablesSecond {
         System.out.println("Рост " + height + " метров");
         short brickHouse = 28458;
         System.out.println("Количество кирпичей для постройки дома 10*10 " + brickHouse + " кирпичей");
-        int bacteriaInYougurt = 107;
+        double bacteriaInYougurt = 107;
         System.out.println("Количество лактобактерий в йогурте " + bacteriaInYougurt + " КОЕ/г");
-        long moonDistance = 384400;
+        double moonDistance = 384400;
         System.out.println("Расстояние от земли до луны " + moonDistance + " км");
         boolean workPermit = true;
         System.out.println("имеется разрешение на работу " + workPermit);
