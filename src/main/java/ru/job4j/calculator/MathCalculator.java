@@ -10,11 +10,11 @@ public class MathCalculator {
 
     public static double sumDifferenceDivide(double first, double second) {
         return difference(first, second)
-                + divide(first, second);
+                + divides(first, second);
     }
 
     public static double allTheCalculations(double first, double second, double third, double fourth) {
-        return sum(first, second) + multiply(first, second) + difference(first, second) + divide(first, second);
+        return sum(first, second) + multiply(first, second) + difference(first, second) + divides(first, second);
     }
 
     public static void main(String[] args) {
