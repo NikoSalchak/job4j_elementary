@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.*;
 class PointTest {
 
     @Test
-    void when00to250Then25() {
+    void when00to250Then25dot0() {
         int x1 = 0;
         int y1 = 0;
         int x2 = 25;
@@ -18,7 +18,7 @@ class PointTest {
     }
 
     @Test
-    void when00to20Then2() {
+    void when00to20Then2dot0() {
         int x1 = 0;
         int y1 = 0;
         int x2 = 2;
@@ -29,7 +29,7 @@ class PointTest {
     }
 
     @Test
-    void when11to55Then5() {
+    void when11to55Then5dot0() {
         int x1 = 1;
         int y1 = 1;
         int x2 = 5;
