@@ -29,7 +29,7 @@ class PointTest {
     }
 
     @Test
-    void when11to55Then5dot0() {
+    void when11to55Then5dot66() {
         int x1 = 1;
         int y1 = 1;
         int x2 = 5;
