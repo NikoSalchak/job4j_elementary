@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class EqLastTest {
 
     @Test
-    void whenEq() {
+    void whenEqual() {
         int[] left = {1, 2, 3};
         int[] right = {5, 4, 3};
         boolean result = EqLast.check(left, right);
@@ -14,7 +14,7 @@ class EqLastTest {
     }
 
     @Test
-    void whenNotEq() {
+    void whenNotEqual() {
         int[] left = {1, 2, 3};
         int[] right = {3, 3, 4};
         boolean result = EqLast.check(left, right);
