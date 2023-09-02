@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ArrayCharTest {
 
     @Test
-    void whenStartWithPrefixThenTrue() {
+    void whenStartWithPrefixThenAllTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] pref = {'H', 'e'};
         boolean result = ArrayChar.startsWith(word, pref);

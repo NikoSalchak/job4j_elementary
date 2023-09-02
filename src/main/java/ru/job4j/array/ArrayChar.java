@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.io.FilterOutputStream;
-
 public class ArrayChar {
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
