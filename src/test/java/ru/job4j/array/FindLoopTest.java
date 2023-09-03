@@ -34,7 +34,7 @@ class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHas8ThenResultEqualFinish() {
+    public void whenDiapasonHas8ThenResultEqualFinish5() {
         int[] data = new int[] {5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
         int el = 8;
         int start = 2;
