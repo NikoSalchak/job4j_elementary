@@ -10,7 +10,7 @@ public class Machine {
         money -= price;
         for (int coin : coins) {
             while (money >= coin) {
-                money = money - coin;
+                money -= coin;
                 rsl[size] += coin;
                 size++;
             }
