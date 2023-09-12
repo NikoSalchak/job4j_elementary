@@ -5,17 +5,23 @@ public class SimpleStringEncoder {
         String result = "";
         char symbol = input.charAt(0);
         int counter = 1;
-        for (int i = 0; i < input.length(); i++) {
-            while (i < input.length() - 1 && input.charAt(i) == input.charAt(i + 1)) {
+        for (int i = 1; i < input.length(); i++) {
+            if (input.charAt(i) == symbol) {
                 counter++;
-                i++;
-            }
-            result += input.charAt(i);
-            if (counter > 1) {
-                result += counter;
+            } else {
+                result = result + symbol;
+                if (counter > 1) {
+                    result = result + counter;
+                }
+                symbol = input.charAt(i);
                 counter = 1;
             }
         }
-        return result;
+        return result + symbol + counter;
+    }
+
+    public static void main(String[] args) {
+        String input = "aaabbbc";
+        System.out.println(SimpleStringEncoder.encode(input));
     }
 }
