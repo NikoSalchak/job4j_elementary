@@ -8,20 +8,20 @@ public class SimpleStringEncoder {
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == symbol) {
                 counter++;
-            } else {
+            } else if (counter == 1) {
                 result = result + symbol;
-                if (counter > 1) {
-                    result = result + counter;
-                }
+                symbol = input.charAt(i);
+            } else if (counter > 1) {
+                result = result + symbol + counter;
                 symbol = input.charAt(i);
                 counter = 1;
             }
         }
-        return result + symbol + counter;
-    }
-
-    public static void main(String[] args) {
-        String input = "aaabbbc";
-        System.out.println(SimpleStringEncoder.encode(input));
+        if (counter > 1) {
+            result = result + symbol + counter;
+        } else {
+            result = result + symbol;
+        }
+        return result;
     }
 }
