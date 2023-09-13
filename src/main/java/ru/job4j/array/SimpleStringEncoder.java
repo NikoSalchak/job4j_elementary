@@ -17,11 +17,7 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-        if (counter > 1) {
-            result = result + symbol + counter;
-        } else {
-            result = result + symbol;
-        }
+        result = counter > 1 ? (result + symbol + counter) : (result + symbol);
         return result;
     }
 }
