@@ -25,11 +25,32 @@ class MaxTest {
     }
 
     @Test
-    void whenRightLargerLeftThenMaxright() {
+    void whenRightLargerLeftThenMaxRight() {
         int left = 4;
         int right = 8;
         int result = Max.max(left, right);
         int expected = 8;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenLeftMiddleRightLargerRight() {
+        int left = 2;
+        int middle = 5;
+        int right = 8;
+        int result = Max.max(left, middle, right);
+        int expected = 8;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenLeftMiddleThirdRightLargerThird() {
+        int left = 2;
+        int middle = 5;
+        int third = 11;
+        int right = 10;
+        int result = Max.max(left, middle, third, right);
+        int expected = 11;
         assertThat(result).isEqualTo(expected);
     }
 }
