@@ -8,34 +8,28 @@ class PointTest {
 
     @Test
     void when00to250Then25dot0() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 25;
-        int y2 = 0;
+        Point point = new Point(0, 0);
+        Point secondPoint = new Point(25, 0);
+        point.distance(secondPoint);
         double expected = 25.0;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+        assertThat(point.distance(secondPoint)).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void when00to20Then2dot0() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double expected = 2.0;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    void when55to78Then3dot6() {
+        Point point = new Point(5, 5);
+        Point secondPoint = new Point(7, 8);
+        point.distance(secondPoint);
+        double expected = 3.6;
+        assertThat(point.distance(secondPoint)).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void when11to55Then5dot66() {
-        int x1 = 1;
-        int y1 = 1;
-        int x2 = 5;
-        int y2 = 5;
-        double expected = 5.66;
-        double out = Point.distance(x1, y1, x2, y2);
-        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    void when255to55Then20dot0() {
+        Point point = new Point(25, 5);
+        Point secondPoint = new Point(5, 5);
+        point.distance(secondPoint);
+        double expected = 20.0;
+        assertThat(point.distance(secondPoint)).isEqualTo(expected, withPrecision(0.01));
     }
 }
